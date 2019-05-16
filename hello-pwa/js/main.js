@@ -24,7 +24,10 @@ request.onupgradeneeded = function() {
   store.put({title: "Water Buffaloes", author: "Fred", isbn: 234567});
   store.put({title: "Bedrock Nights", author: "Barney", isbn: 345678});
 };
-
+request.onerror = function(event) {
+    document.getElementById("p1").innerHTML = "we failed";
+      // Do something with request.errorCode!
+};
 request.onsuccess = function() {
   db = request.result;
 };
