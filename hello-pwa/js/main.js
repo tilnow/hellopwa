@@ -8,7 +8,7 @@ window.onload = () => {
 }
 
 
-document.getElementById("p1").innerHTML = "New text!";
+document.getElementById("p1").innerHTML = "New text and db!";
 var db;
 var request = indexedDB.open("library");
 
