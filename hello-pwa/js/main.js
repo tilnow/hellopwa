@@ -9,6 +9,7 @@ window.onload = () => {
 
 
 document.getElementById("p1").innerHTML = "New text!";
+var db;
 var request = indexedDB.open("library");
 
 request.onupgradeneeded = function() {
