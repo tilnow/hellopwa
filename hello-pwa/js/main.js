@@ -9,4 +9,4 @@ window.onload = () => {
 
 
 document.getElementById("p1").innerHTML = "New text and db!+"+localStorage.getItem("data");
-localStorage.setItem("data",date());
+localStorage.setItem("data", Date());
