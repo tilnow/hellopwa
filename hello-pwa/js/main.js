@@ -6,3 +6,6 @@ window.onload = () => {
              .register('./sw.js');
   }
 }
+
+
+document.getElementById("p1").innerHTML = "New text!";
