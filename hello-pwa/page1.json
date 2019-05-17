@@ -1,21 +1,47 @@
-[{
+[
+  {
   "id": 1,
-  "cat":"",
-  "question": "did you use IPH tool?",
-  "shorthelp":"an example of a short explanation",
-  "col1": true,
-  "col2": true,
-  "col3": false,
-  "col4": true,
-  "col5": true
+  "cat":"Publications",
+  "question": "About to publish or show anything (also on the web) that was not published before? (also by scientist)",
+  "shorthelp":"an example of a 1 short explanation",
+  "col": [true, false, true,false,false]
   },
-{
-  "id": 1,
-  "question": "did you even download IPH tool?",
-  "col1": true,
-  "col2": false,
-  "col3": false,
-  "col4": false,
-  "col5": true
+  {
+  "id": 2,
+  "cat":"Publications",
+  "question": "Is what is about to publish unprotected?",
+  "shorthelp":"an example of a 2 short explanation",
+  "col": [true,  true,false,true,false]
 
-}]
+  },{
+  "id": 3,
+  "cat":"Publications",
+  "question": "Will the publication give ideas to competitors?",
+  "shorthelp":"an example of a 3 short explanation",
+  "col": [true,  false,false,false,false]
+  },
+  {
+  "id": 4,
+  "cat":"Administrative & Manpower",
+  "question": "Changes in manpower:\nEmployees leaving, perhaps with untapped IP? New employees?",
+  "shorthelp":"an example of a 4 short explanation",
+  "col": [ false,true, false,true, false]
+
+  },
+  {
+  "id": 5,
+  "cat":"Administrative & Manpower",
+  "question": "IP related expenditure above $ Threshold without a cost-benefit analysis?",
+  "shorthelp":"an example of a 5 short explanation",
+  "col": [ false, false, false, false, true]
+  },
+  {
+  "id": 6,
+  "cat":"Administrative & Manpower",
+  "question": "Did you start working with a subcontractor, university, doctor at a hospital?",
+  "shorthelp":"an example of a 6 short explanation",
+  "col": [ true, true, false, true, false]
+
+  },
+
+]
