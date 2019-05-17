@@ -10,6 +10,8 @@ html,
   margin: 0;
   padding: 0;
   width: 100%;
+  font-size: 62.5%;
+  box-sizing: border-box;
 }
 
 /* Center the content in the browser window */
@@ -20,4 +22,15 @@ html,
 
 .title {
   font-size: 3rem;
+}
+
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+.buts {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
 }
