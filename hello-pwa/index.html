@@ -30,7 +30,7 @@ function email_report(){
   var sub="Report on page 1 as of"+String(Date());
   var body="";
   var em=localStorage.getItem("reportemail") || "testingIPH@fensterfamily.net";
-  page1data.forEach(function(obj,ind){var x=document.getElementById('cbx_'+String(obj.id));if(x.checked){ var p="";obj.col.forEach(function(o,i){if(o) p=p+'\r\n'+sowhat[i]+'\r\n';}); var pm=prompt("you said yes to  **"+obj.question+"** This can have consequnces of "+p+"Can you give more details, beyond yes?"); body=body+obj.question+ " yes. "+pm+"\r\n";}});
+  page1data.forEach(function(obj,ind){var x=document.getElementById('cbx_'+String(obj.id));if(x.checked){ var p="";obj.col.forEach(function(o,i){alert(o,i);if(o) p=p+'\r\n'+sowhat[i]+'\r\n';}); var pm=prompt("you said yes to  **"+obj.question+"** This can have consequnces of "+p+"Can you give more details, beyond yes?"); body=body+obj.question+ " yes. "+pm+"\r\n";}});
  window.open('mailto:'+em+'?subject='+sub+'&body='+body);
 
 
