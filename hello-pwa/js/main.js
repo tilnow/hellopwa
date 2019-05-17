@@ -10,6 +10,14 @@ window.onload = () => {
 
 document.getElementById("p1").innerHTML = "New text and db!+"+localStorage.getItem("data");
 localStorage.setItem("data", Date());
-var page1data=require('./page1.json');
+var xmlhttp = new XMLHttpRequest();
+xmlhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        var page1data = JSON.parse(this.responseText);
+
+    }
+};
+xmlhttp.open("GET", './page1.json', true);
+xmlhttp.send();
 document.write(page1data[1].question);
 document.write(page1data[1].col3);
