@@ -32,7 +32,7 @@ xmlhttp.onreadystatechange = function() {
 };
 function addline(thing){//shoudl we be in a form? not clear as no real submit
   page1html=page1html+"<div id='line_"+thing.id+"'><p>";
-  page1html=page1html+'<input type="checkbox" name="cbx_'+thing.id+'" value="line_'+thing.id+'" >'//had inline: onclick="alert(\'i have been clicked\');return false;"
+  page1html=page1html+'<input type="checkbox" id="cbx_'+thing.id+'" value="line_'+thing.id+'" >'//had inline: onclick="alert(\'i have been clicked\');return false;"
 //maybe add one of these and yes make it a form, at least so we can change page: <input type="submit" value="Submit">
 
   page1html=page1html+thing.question;
