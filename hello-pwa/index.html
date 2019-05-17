@@ -30,7 +30,7 @@ function email_report(){
   var sub="Report on page 1 as of"+String(Date());
   var body="";
   var em=localStorage.getItem("reportemail") || "testingIPH@fensterfamily.net";
-  page1data.forEach(function(obj,ind){var x=document.getElementById('cbx_'+String(obj.id));if(x.checked){ var pm=promt("pls give details so we understand why you said yes to "+obj.question); body=body+obj.question+ " yes. "+pm+"\r\n";}});
+  page1data.forEach(function(obj,ind){var x=document.getElementById('cbx_'+String(obj.id));if(x.checked){ var pm=prompt("pls give details so we understand why you said yes to "+obj.question); body=body+obj.question+ " yes. "+pm+"\r\n";}});
  window.open('mailto:'+em+'?subject='+sub+'&body='+body);
 
 
