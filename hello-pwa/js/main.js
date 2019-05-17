@@ -37,7 +37,7 @@ function addline(thing){//shoudl we be in a form? not clear as no real submit
 
   page1html=page1html+thing.question;
   thing.col.forEach(function(obj,ind){var x=0;if(obj==true)x=1;page1html=page1html+'<img src="'+yaelicons[(ind+1)*x]+'" width="20" height="20" alt="x">';})//use ind later when i insert real images
-  page1html=page1html+'<button class="shorthelp" onclick="alert(\"'+thing.shorthelp+"\")">Help</button>'
+  page1html=page1html+'<button class="shorthelp" onclick="alert(\''+thing.shorthelp+'\')">Help</button>'
   page1html=page1html+"</p></div>";
 }
 xmlhttp.open("GET", './page1.json', true);
