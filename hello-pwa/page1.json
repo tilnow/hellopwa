@@ -1,6 +1,8 @@
 [{
   "id": 1,
+  "cat":"",
   "question": "did you use IPH tool?",
+  "shorthelp":"an example of a short explanation",
   "col1": true,
   "col2": true,
   "col3": false,
