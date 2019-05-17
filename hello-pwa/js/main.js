@@ -32,11 +32,12 @@ xmlhttp.onreadystatechange = function() {
 };
 function addline(thing){//shoudl we be in a form? not clear as no real submit
   page1html=page1html+"<div id='line_"+thing.id+"'><p>";
-  page1html=page1html+'<input type="checkbox" name="cbx_'+thing.id+'" value="line_'+thing.id+'" onclick="alert(\'i have been clicked\');return false;">'
+  page1html=page1html+'<input type="checkbox" name="cbx_'+thing.id+'" value="line_'+thing.id+'" >'//had inline: onclick="alert(\'i have been clicked\');return false;"
 //maybe add one of these and yes make it a form, at least so we can change page: <input type="submit" value="Submit">
 
   page1html=page1html+thing.question;
   thing.col.forEach(function(obj,ind){var x=0;if(obj==true)x=1;page1html=page1html+'<img src="'+yaelicons[(ind+1)*x]+'" width="20" height="20" alt="x">';})//use ind later when i insert real images
+  page1html=page1html+'<button class="shorthelp" onclick="alert(\"'+thing.shorthelp+"\")">Help</button>'
   page1html=page1html+"</p></div>";
 }
 xmlhttp.open("GET", './page1.json', true);
