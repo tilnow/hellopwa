@@ -23,7 +23,19 @@ IFYOU ANSWER YES FOR AT LEAST ONE OF THE ITEMS, THERE MAY BE AN IP SITUATION!</p
 
     <div id="questions">
     </div>
+    <div id="report"><button id="report_button" onclick="email_report()">Email report</button>
   </div>
+<script>
+function email_report(){
+  var sub="Report on page 1 as of"+String(Date());
+  var body="";
+  var em=localStorage.getItem("reportemail") || "testingIPH@fensterfamily.net";
+  page1data.forEach(function(obj,ind){var x=getElementByName('cbx_'+String(obj.id));if(x.checked) body=body+obj.question+ " yes\n";});
+ window.open('mailto:'+em+'?subject='+sub+'&body='+body);
+
+
+}
+</script>
 
 
   <script src="js/main.js"></script>
