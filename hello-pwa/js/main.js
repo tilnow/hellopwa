@@ -36,7 +36,7 @@ function addline(thing){//shoudl we be in a form? not clear as no real submit
 //maybe add one of these and yes make it a form, at least so we can change page: <input type="submit" value="Submit">
 
   page1html=page1html+thing.question;
-  thing.col.forEach(function(obj,ind){var x=0;if(obj==true)x=1;page1html=page1html+'<img src="'+yaelicons[(ind+1)*x]+'" width="75" height="80" alt="x">';})//use ind later when i insert real images
+  thing.col.forEach(function(obj,ind){var x=0;if(obj==true)x=1;page1html=page1html+'<img src="'+yaelicons[(ind+1)*x]+'" width="20" height="20" alt="x">';})//use ind later when i insert real images
   page1html=page1html+"</p></div>";
 }
 xmlhttp.open("GET", './page1.json', true);
