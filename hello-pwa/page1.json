@@ -1,0 +1,19 @@
+[{
+  "id": 1,
+  "question": "did you use IPH tool?",
+  "col1": true,
+  "col2": true,
+  "col3": false,
+  "col4": true,
+  "col5": true
+  },
+{
+  "id": 1,
+  "question": "did you even download IPH tool?",
+  "col1": true,
+  "col2": false,
+  "col3": false,
+  "col4": false,
+  "col5": true
+
+}]
