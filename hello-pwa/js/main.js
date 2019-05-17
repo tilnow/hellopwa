@@ -15,10 +15,9 @@ var page1data;
 xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
         page1data = JSON.parse(this.responseText);
-
+        document.write(page1data[1].question);
+        document.write(page1data[1].col3);
     }
 };
 xmlhttp.open("GET", './page1.json', true);
 xmlhttp.send();
-document.write(page1data[1].question);
-document.write(page1data[1].col3);
